@@ -1,0 +1,5 @@
+{
+    "hostname": "my_computer",
+    "filesystem_path": "filesystem.tar",
+    "startup_script": "startup.sh"
+}
