@@ -17,7 +17,6 @@ def extract_filesystem(tar_path, extract_to="/tmp/virtual_fs"):
     return extract_to
 
 
-
 class ShellEmulator:
     def __init__(self, hostname, root_dir):
         self.hostname = hostname
@@ -85,4 +84,7 @@ def run_command(shell, command):
     else:
         print(f"Команда не найдена: {command}")
 
-run_shell("config.json")
+
+if __name__ == "__main__":
+    run_shell("config.json")
+
