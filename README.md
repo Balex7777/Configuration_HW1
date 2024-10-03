@@ -36,25 +36,25 @@ pip install pytest
 pytest test
 ```
 ### Результаты тестов
-![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/tests.png)
+![Tests](https://github.com/Balex7777/Configuration_HW1/blob/main/images/tests.png)
 
 ### Скрины работы программы
 - Комманда ``ls``
 
-![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/ls.png)
+![ls](https://github.com/Balex7777/Configuration_HW1/blob/main/images/ls.png)
 
 - Комманда ``cd``
 
-![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/cd.png)
+![cd](https://github.com/Balex7777/Configuration_HW1/blob/main/images/cd.png)
 
 - Комманда ``uname``
 
-![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/uname.png)
+![uname](https://github.com/Balex7777/Configuration_HW1/blob/main/images/uname.png)
 
 - Комманда ``uptime``
 
-![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/uptime.png)
+![uptime](https://github.com/Balex7777/Configuration_HW1/blob/main/images/uptime.png)
 
 - Комманда ``exit``
 
-![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/exit.png)
+![exit](https://github.com/Balex7777/Configuration_HW1/blob/main/images/exit.png)
