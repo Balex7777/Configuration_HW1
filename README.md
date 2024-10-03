@@ -23,3 +23,38 @@ tar. Эмулятор должен работать в режиме CLI.
 
 Все функции эмулятора должны быть покрыты тестами, а для каждой из
 поддерживаемых команд необходимо написать 3 теста.
+
+### Запуск программы
+```bash
+python start_emulator.py
+```
+
+### Запуск тестов
+
+```bash
+pip install pytest
+pytest test
+```
+### Результаты тестов
+![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/tests.png)
+
+### Скрины работы программы
+- Комманда ``ls``
+
+![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/ls.png)
+
+- Комманда ``cd``
+
+![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/cd.png)
+
+- Комманда ``uname``
+
+![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/uname.png)
+
+- Комманда ``uptime``
+
+![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/uptime.png)
+
+- Комманда ``exit``
+
+![Tests](https://github.com/Balex7777/Configuration_HW1/raw/master/images/exit.png)
