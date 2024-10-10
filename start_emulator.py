@@ -23,8 +23,12 @@ class ShellEmulator:
         self.current_dir = root_dir
         self.start_time = time.time()
 
-    def ls(self):
-        return os.listdir(self.current_dir)
+    def ls(self, path=None):
+        target_dir = os.path.join(self.current_dir, path) if path else self.current_dir
+        if os.path.isdir(target_dir):
+            return os.listdir(target_dir)
+        else:
+            return [f"Нет такого каталога: {target_dir}"]
 
     def cd(self, path):
         if path == "..":
@@ -70,8 +74,15 @@ def run_shell(config_file):
 
 
 def run_command(shell, command):
-    if command == "ls":
-        print("\n".join(shell.ls()))
+    if command.startswith("ls"):
+        parts = command.split(maxsplit=1)
+        if len(parts) == 1:
+            # ls без аргументов
+            print("\n".join(shell.ls()))
+        else:
+            # ls с указанием пути
+            path = parts[1]
+            print("\n".join(shell.ls(path)))
     elif command.startswith("cd"):
         _, path = command.split(maxsplit=1)
         shell.cd(path)
